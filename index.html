@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.8.4.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 1in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0in">
+<font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;!DOCTYPE
+html&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;html
+lang=&quot;en&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;head&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;meta
+charset=&quot;UTF-8&quot; /&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;meta
+name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1, viewport-fit=cover&quot; /&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;title&gt;Will
+you be my Valentine?&lt;/title&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;!--
+Confetti library --&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;script
+src=&quot;https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js&quot;&gt;&lt;/script&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;style&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">:root
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--bg1:
+#ffd6e7;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--bg2:
+#ffeef6;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--card:
+#ffffffcc;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--yes:
+#ff3b7a;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--yesHover:
+#ff1f68;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">*
+{ box-sizing: border-box; }</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">body
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">min-height:
+100svh;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+grid;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">place-items:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+radial-gradient(circle at top, var(--bg2), var(--bg1));</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+system-ui, sans-serif;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">overflow:
+hidden;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+16px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">#confettiCanvas
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">position:
+fixed;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">inset:
+0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+100vw;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">height:
+100vh;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">pointer-events:
+none;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">z-index:
+9999;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.card
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+min(720px, 92vw);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+26px 22px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+var(--card);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">backdrop-filter:
+blur(10px);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">border-radius:
+22px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">text-align:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">box-shadow:
+0 18px 60px rgba(0,0,0,.15);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.art
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+min(260px, 80vw);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+0 auto 10px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+block;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">filter:
+drop-shadow(0 10px 14px rgba(0,0,0,.12));</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">h1
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+clamp(26px, 4vw, 44px);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+12px 0 18px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.button-zone
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">position:
+relative;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+min(520px, 92%);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">height:
+150px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+0 auto;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">touch-action:
+none;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">button
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">position:
+absolute;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">top:
+50%;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">transform:
+translateY(-50%);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+16px 24px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+18px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-weight:
+800;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">border-radius:
+999px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">border:
+none;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">cursor:
+pointer;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">box-shadow:
+0 10px 24px rgba(0,0,0,.14);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">user-select:
+none;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">-webkit-tap-highlight-color:
+transparent;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">transition:
+transform .12s ease, background .12s ease;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">#yesBtn
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">left:
+18%;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+var(--yes);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+#fff;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">#yesBtn:hover
+{ background: var(--yesHover); }</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">#noBtn
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">left:
+62%;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+#e5e7eb;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+#111827;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.hint
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-top:
+10px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+13px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">opacity:
+.7;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.result
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+none;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-top:
+18px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">animation:
+pop .35s ease;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.result
+h2 {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+clamp(30px, 4.5vw, 46px);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+10px 0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.fireworks
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+min(380px, 90vw);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+0 auto;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+block;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">@keyframes
+pop {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">from
+{ transform: scale(.96); opacity: 0; }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">to
+{ transform: scale(1); opacity: 1; }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/style&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/head&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;body&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;canvas
+id=&quot;confettiCanvas&quot;&gt;&lt;/canvas&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;main
+class=&quot;card&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;svg
+class=&quot;art&quot; viewBox=&quot;0 0 320 240&quot;
+xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;defs&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;linearGradient
+id=&quot;fur&quot; x1=&quot;0&quot; x2=&quot;1&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;stop
+offset=&quot;0&quot; stop-color=&quot;#f7c7a1&quot;/&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;stop
+offset=&quot;1&quot; stop-color=&quot;#f2a97b&quot;/&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/linearGradient&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;linearGradient
+id=&quot;heart&quot; x1=&quot;0&quot; x2=&quot;1&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;stop
+offset=&quot;0&quot; stop-color=&quot;#ff4d7d&quot;/&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;stop
+offset=&quot;1&quot; stop-color=&quot;#ff1f68&quot;/&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/linearGradient&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/defs&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;path
+d=&quot;M250 50 C250 33 270 25 282 38</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                            <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">C294
+25 314 33 314 50</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                            <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">C314
+78 282 92 282 106</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                            <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">C282
+92 250 78 250 50Z&quot;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">fill=&quot;url(#heart)&quot;/&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;path
+d=&quot;M90 120 C90 70 140 40 190 60</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                            <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">C240
+40 290 70 290 120</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                            <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">C290
+180 240 210 190 210</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                            <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">C140
+210 90 180 90 120Z&quot;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">fill=&quot;url(#fur)&quot;/&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;circle
+cx=&quot;160&quot; cy=&quot;130&quot; r=&quot;8&quot;/&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;circle
+cx=&quot;220&quot; cy=&quot;130&quot; r=&quot;8&quot;/&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/svg&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h1&gt;Maddi,
+will you be my Valentine?&lt;/h1&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;section
+class=&quot;button-zone&quot; id=&quot;zone&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;button
+id=&quot;yesBtn&quot;&gt;Yes&lt;/button&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;button
+id=&quot;noBtn&quot;&gt;No&lt;/button&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/section&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;hint&quot; id=&quot;hint&quot;&gt;“No” seems a bit
+shy 😈&lt;/div&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;section
+class=&quot;result&quot; id=&quot;result&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h2&gt;YAY!
+🎉&lt;/h2&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;img</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">class=&quot;fireworks&quot;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+             
+<font face="Helvetica, serif"><font size="3" style="font-size: 12pt">src=&quot;https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif&quot;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">alt=&quot;Fireworks&quot;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/section&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/main&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;script&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+zone = document.getElementById(&quot;zone&quot;);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+yesBtn = document.getElementById(&quot;yesBtn&quot;);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+noBtn = document.getElementById(&quot;noBtn&quot;);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+result = document.getElementById(&quot;result&quot;);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+hint = document.getElementById(&quot;hint&quot;);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+confettiCanvas = document.getElementById(&quot;confettiCanvas&quot;);</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">function
+resizeCanvas() {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+dpr = Math.max(1, window.devicePixelRatio || 1);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">confettiCanvas.width
+= window.innerWidth * dpr;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">confettiCanvas.height
+= window.innerHeight * dpr;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">resizeCanvas();</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">window.addEventListener(&quot;resize&quot;,
+resizeCanvas);</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+confettiInstance = confetti.create(confettiCanvas, {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">resize:
+false,</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">useWorker:
+true</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">});</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">function
+celebrate() {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+end = Date.now() + 1500;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">(function
+frame() {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">confettiInstance({</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">particleCount:
+12,</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">spread:
+90,</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">startVelocity:
+45,</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">origin:
+{ x: Math.random(), y: Math.random() * 0.3 }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">});</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">if
+(Date.now() &lt; end) requestAnimationFrame(frame);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">})();</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">let
+yesScale = 1;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">function
+growYes() {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">yesScale
+= Math.min(2.2, yesScale + 0.1);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">yesBtn.style.transform
+= `translateY(-50%) scale(${yesScale})`;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">function
+moveNo(x, y) {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+z = zone.getBoundingClientRect();</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+b = noBtn.getBoundingClientRect();</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">let
+dx = b.left + b.width / 2 - x;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">let
+dy = b.top + b.height / 2 - y;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">let
+mag = Math.hypot(dx, dy) || 1;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">dx
+/= mag; dy /= mag;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">let
+left = (b.left - z.left) + dx * 150;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">let
+top = (b.top - z.top) + dy * 150;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">left
+= Math.max(0, Math.min(z.width - b.width, left));</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">top
+= Math.max(0, Math.min(z.height - b.height, top));</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">noBtn.style.left
+= left + &quot;px&quot;;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">noBtn.style.top
+= top + &quot;px&quot;;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">noBtn.style.transform
+= &quot;none&quot;;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">growYes();</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">zone.addEventListener(&quot;pointermove&quot;,
+e =&gt; {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+b = noBtn.getBoundingClientRect();</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">const
+d = Math.hypot(</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">b.left
++ b.width / 2 - e.clientX,</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">b.top
++ b.height / 2 - e.clientY</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">if
+(d &lt; 140) moveNo(e.clientX, e.clientY);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">});</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">yesBtn.addEventListener(&quot;click&quot;,
+() =&gt; {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">zone.style.display
+= &quot;none&quot;;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">hint.style.display
+= &quot;none&quot;;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">result.style.display
+= &quot;block&quot;;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">celebrate();</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">});</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/script&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/body&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/html&gt;</font></font></font></p>
+</body>
+</html>
